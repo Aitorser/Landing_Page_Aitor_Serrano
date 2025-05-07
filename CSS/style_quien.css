@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Goldman:wght@400;700&family=Iceland&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Barcode+128+Text&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Saira+Stencil+One&family=Sixtyfour+Convergence&display=swap');
+
+:root {
+    --primary: rgb(3, 9, 69);
+    --secundary: #2e4469;
+    --shadow: #323359;
+    --black-text: rgb(61, 61, 61);
+    --white-text: #fff;
+    --button-hover: #26305b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-image: url(../img/fondo_quien.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    
+    text-align: center;
+    color: var(--black-text);
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    margin-top: 1rem;
+}
+
+p{
+    color: var(--black-text);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+
+}

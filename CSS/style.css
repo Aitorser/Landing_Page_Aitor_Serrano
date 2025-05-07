@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{ /*Aplica estos estilos a todos los elementos de la página*/
+    margin: 0px; /* Elimina los márgenes por defecto */
+    padding-top: 0px; /* Elimina el padding superior por defecto */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del tamaño */
+    font-family: 'Nunito', sans-serif; /*'Nunito' como fuente predeterminada */
+}
+
+body{ /*Estilos para el cuerpo del documento*/
+    background-image: url(../img/fondo.jpg);
+    background-position: center; /*Centra la imagen de fondo horizontal y verticalmente*/
+    background-repeat: no-repeat; /*Evita efecto mosaico*/
+    background-attachment: fixed; /*Fija la imagen para que no se desplace con el scroll*/
+    background-size: 100% 100%; /*Estira la imagen para cubrir todo el contenedor*/
+}
+
+section{ /*Estilos para las secciones de la página*/
+    position : relative; /*Permite posicionamiento relativo de elementos hijos*/
+    width: 100%; /*Ocupa el 100% del ancho disponible*/
+    min-height: 100vh; /*Altura mínima del 100% de la pantalla visible*/
+    display: flex; /*Modelo de caja flexible*/
+    justify-content: center; /*Centra horizontalmente los elementos hijos*/
+    align-items: center; /*Centra verticalmente los elementos hijos*/
+    padding: 100px; /*Espaciado interno de 100px en todos los lados*/
+}
+
+header{ /*Estilos para el encabezado principal*/
+    position: absolute; /*Posicionamiento absoluto respecto al contenedor padre*/
+    top: 0px; /*Alineado en la parte superior*/
+    left: 0px; /*Alineado a la izquierda*/
+    width: 100%; /*Ancho completo*/
+    padding: 40px 100px; 
+    display: flex; /*Modelo de caja flexible*/
+    justify-content: space-between; /*Espacio entre elementos*/
+    align-items: center; /*Centrado vertical*/
+}
+
+header .logo{ /*Estilos para el logo*/
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none; /*Sin subrayado*/
+    text-transform: uppercase; /*Texto en mayúsculas*/
+    background: #6fc183;
+    border-radius: 5px; /*Bordes redondeados*/
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+header .logo:hover{ /*Efecto hover para el logo*/
+    color: #6fc183;
+    background: white;
+    transition: 1s; /*Duración transición*/
+}
+
+header .navbar{ /*Contenedor de navegación*/
+    position: relative;
+    display: flex;
+}
+
+header .navbar li{ /*Elementos de lista*/
+    list-style: none; /*Quitamos los puntos*/
+    margin-left: 30px;
+}
+
+header .navbar li a{ /*Enlaces de navegación*/
+    text-decoration: none; /*Sin subrayado*/
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+header .navbar li a:hover{ /*Efecto hover enlaces*/
+    border-bottom: 5px solid #6fc183;;
+    padding: 2px;
+}
+
+/*CONTENIDO DE LA WEB*/
+
+.contenido{ /*Contenedor principal*/
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*Centra verticalmente los elementos*/
+    padding-left: 30px; /*Espaciado izquierdo de 30px*/
+}
+
+.contenido .tituloBox{ /*Contenedor de titulos*/
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+    padding-right: 150px;
+}
+
+.contenido .tituloBox h2{
+    font-size: 3em;/*Tamaño de fuente 3 veces el tamaño base*/
+    text-transform: uppercase;
+    color: white;
+}
+
+.contenido .tituloBox h2 span{
+    background: #6fc183;;
+    color: white;
+    font-size: 0.8em;
+    padding: 0 10px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.contenido .tituloBox p{
+    font-size: 1.4em;
+    line-height: 1.5;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.contenido .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #6fc183;;
+    background: white;
+    padding: 10px 20px;
+    margin: left 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.contenido .tituloBox a:hover{
+    color: white;
+    background: #6fc183;;
+    transition: 0.5s;
+}
+
+.contenido .imgBox{/*Contenedor de imagen*/
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;/*Alinea contenido a la derecha*/
+    margin-top: -20px;
+    z-index: -5; /*Coloca detrás de otros elementos*/
+}
+
+.contenido .imgBox img{ /*Imagen principal*/
+    height: 80vh; /*Altura del 80% del viewport*/
+}
+
+.contenido .imgBox img:hover{
+    height: 80vh;
+}
+
+/*COPYRIGHT*/
+
+.copyright{
+    position: absolute;
+    bottom: 60px; 
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p{
+    color: white;
+    text-align: center;
+    margin-left: 100px;
+}
+
+/*REDES SOCIALES*/
+
+.redesSociales{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+}
+
+.redesSociales li{
+    padding: 10px;    
+}
+
+.redesSociales li a{
+    color: white;
+    font-size: 2em;
+    transition: 0.3s;    
+}
+
+.redesSociales li:hover a{
+    color: #6fc183;;
+}
+

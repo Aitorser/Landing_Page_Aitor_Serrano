@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Goldman:wght@400;700&family=Iceland&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Barcode+128+Text&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Saira+Stencil+One&family=Sixtyfour+Convergence&display=swap');
+
+:root {
+    --primary: rgb(3, 9, 69);
+    --secundary: #2e4469;
+    --shadow: #323359;
+    --black-text: rgb(61, 61, 61);
+    --white-text: #fff;
+    --button-hover: #26305b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-image: url(../img/formulario.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 4px 4px 8px var(--shadow);
+    color: var(--white-text);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+form {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white-text);
+    text-align:left;
+    text-shadow: 4px 4px 8px var(--shadow);
+    background-color: rgba(247, 249, 248, 0.259);
+    border-radius: 10px;
+    max-width: 700px;
+    margin: auto;
+    padding: 0.5rem 1rem;
+}
+
+fieldset {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0.8rem;
+}
+
+legend{
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem; 
+}
+
+label{ /*convertimos todos los label en bloques*/
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 0.3rem;
+}
+
+textarea{
+    width: 97%;
+    height: 100px;
+    margin-bottom: 0.3rem;
+    margin-left: 0.6rem;
+}
+
+.botones{
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+.botones input{
+    border: 1px solid rgb(255, 192, 239);
+    background-color: rgb(255, 192, 239);
+    font-size: 1rem;
+    color: var(--black-text);
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 5px 20px;
+    box-shadow: 0 8px 16px var(--shadow);
+}
+
+

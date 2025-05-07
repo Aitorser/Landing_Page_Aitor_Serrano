@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link al css-->
+    <link rel="stylesheet" href="CSS/style_formulario.css">
+    <link rel="shortcut icon" href="img/senor.png"  type="image/x-icon">
+    <title>Contacto</title>
+</head>
+    <body>
+        <h1>Formulario de contacto</h1>
+            <form action="mailto:aitorsdlf@gmail.com" method="post" autocomplete="on" target="_blank">
+            <fieldset>
+                <!-- Sección Datos -->
+                <legend>Datos personales</legend>
+                
+                <label for="nombre">Nombre completo:
+                    <input type="text" id="nombre" name="nombre" placeholder="Vicente Nario" required>
+                </label>
+                <label for="email">Correo electrónico:
+                    <input type="email" id="email" name="email" placeholder="tucorreo@tucliente.com" required>
+                </label>
+                <label for="telefono">Teléfono:
+                    <input type="tel" id="telefono" name="telefono" placeholder="123456789">
+                </label>
+                
+            </fieldset>
+
+            <!-- Sección otros datos -->
+
+            <fieldset>
+                <legend>Sobre ti</legend>
+                
+                <label><input type="radio" id="masculino" name="genero" value="masculino">
+                    Soy una empresa</label>
+                <label><input type="radio" id="femenino" name="genero" value="femenino">
+                    Soy un particular</label>
+            </fieldset>
+            
+            <!-- Sección preferencias -->
+
+            <fieldset>
+                <legend>Qué te trae por aquí</legend>
+        
+                    <label><input type="checkbox" id="Robots" name="intereses" value="Robots">
+                    Te quiero contratar</label> 
+                    <label><input type="checkbox" id="Personas" name="intereses" value="Personas">
+                    Quiero trabajar contigo</label> 
+                </label>
+            </fieldset>
+            
+            <!-- Sección información adicional -->
+
+            <fieldset>
+                <legend>Información adicional</legend>
+                
+                <label for="pais">País del que me visitas
+                <select id="pais" name="pais">
+                    <option value="es">España</option>
+                    <option value="ot">Otro</option>
+                </select>
+                </label>
+            </fieldset>
+
+            <!-- Sección comentarios -->
+            
+            <fieldset>
+                <legend>Cuéntame lo que quieras</legend>
+                
+                <label for="comentarios"></label>
+                <textarea id="comentarios" name="comentarios"></textarea>
+                
+            </fieldset>
+            
+            <!-- Sección botones -->
+
+            <div class="botones">
+                <input type="submit" value="Enviar Formulario">
+                <input type="reset" value="Limpiar Formulario">
+            </div>
+
+        </form>
+    </body>
+</html>
